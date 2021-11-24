@@ -13,7 +13,11 @@ export default new Router({
                 {
                     path: "/Button",
                     component:()=>import("../components/Button/index.vue")
-                }
+                },
+                {
+                    path: "/Icon",
+                    component:()=>import("../components/page/doc.vue")
+                },
             ]
         },
         

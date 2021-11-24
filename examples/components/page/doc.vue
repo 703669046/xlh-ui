@@ -1,12 +1,20 @@
 <template>
-  <demo-md class="markdown-body"></demo-md>
+    <div>
+        <div>
+            <div class="markdown-body">
+                <markdown-test>
+                </markdown-test>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-import DemoMd from './test.md';
+import markdownTest from "./test.md";
+
 export default {
-  components: {
-    DemoMd
-  }
-}
+    components: {
+        markdownTest
+    }
+};
 </script>

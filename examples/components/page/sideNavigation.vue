@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="nvigation-box">
         <el-menu default-active="/Button" :router="true" @open="handleOpen" @close="handleClose">
             <el-menu-item v-for="(item,index) in navigation" :key="index" :index="item.to">
                 <i class="el-icon-menu"></i>
@@ -33,3 +33,14 @@ export default {
     }
 };
 </script>
+
+
+<style lang="less" scoped>
+.nvigation-box{
+    // position: absolute;
+    // width: 100%;
+    // top:0;
+    // left: 0;
+    // max-height:100vh ;
+}
+</style>

@@ -9,6 +9,7 @@
             <x-button type="warning">警告按钮</x-button>
             <x-button type="danger">危险按钮</x-button>
             <x-button type="info">信息按钮</x-button>
+            
         </section>
 
         <br />
@@ -43,11 +44,15 @@
     </div>
 </template>
 
-
+<script>
+export default {
+    components:{
+    }
+}
+</script>
 <style lang="less" scoped>
 .sample {
-    
-    padding:15px;
+    padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
 }
 </style>

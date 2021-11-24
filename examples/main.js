@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+import 'github-markdown-css'
 // 引入element-ui 
 import elementui from "element-ui";
 // 引入element-ui样式
