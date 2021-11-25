@@ -7,6 +7,9 @@ import elementui from "element-ui";
 // 引入element-ui样式
 import "element-ui/lib/theme-chalk/index.css"
 
+import $ from "jquery";
+import './components/docuMarkdown'
+
 import XmitterUi from "../packages"
 import router from "./router"
 import store from "./store"

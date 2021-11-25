@@ -1,6 +1,7 @@
 
 
 const path = require("path");
+const Webpack  = require("webpack") 
 
 module.exports = {
     pages: {
@@ -25,6 +26,17 @@ module.exports = {
     lintOnSave: false,
     // 打包时不生成.map文件，加快打包速度
     productionSourceMap: false,
+
+    // jquery配置
+    configureWebpack: {
+        plugins: [
+          new Webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "windows.jQuery": "jquery",
+          }),
+        ],
+      },
 
     // 扩展webpack配置，让packages加入编译
     chainWebpack: (config) => {
@@ -59,21 +71,5 @@ module.exports = {
                 return options;
             })
     },
-    // module: {
-    //     rules: [
-    //         {
-    //             test: /\.md$/,
-    //             use: [
-    //                 {
-    //                     loader: "html-loader"
-    //                 },
-    //                 {
-    //                     loader: "markdown-loader",
-    //                     options: {}
-    //                 }
-    //             ]
-    //         },
-    //     ]
-    // }
 
 };

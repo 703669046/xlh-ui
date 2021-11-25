@@ -12,11 +12,11 @@ export default new Router({
             children:[
                 {
                     path: "/Button",
-                    component:()=>import("../components/Button/index.vue")
+                    component:()=>import("../components/common/Button/index.vue")
                 },
                 {
                     path: "/Icon",
-                    component:()=>import("../components/page/doc.vue")
+                    component:()=>import("../components/common/Button/index.vue")
                 },
             ]
         },
