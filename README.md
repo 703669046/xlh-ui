@@ -1,5 +1,5 @@
 # xlh-ui UI组件库
-<a href="http://xlh-ui.codehauler.cn>组件详细文档</a>
+<a href="http://xlh-ui.codehauler.cn">组件详细文档 </a>
 
 ```
 yarn add xlh-ui
