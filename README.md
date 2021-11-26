@@ -1,25 +1,12 @@
-# xlh-ui
-# 组件库
+# xlh-ui UI组件库
+<a href="http://xlh-ui.codehauler.cn>组件详细文档</a>
 
-## Project setup
 ```
-yarn install
-```
+yarn add xlh-ui
+npm install xlh-ui --save
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+// 在main.js文件中引用
+import xlhui from 'xlh-ui'
 
-### Compiles and minifies for production
+Vue.use(xlhui)
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

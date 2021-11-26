@@ -84,6 +84,24 @@
                 </el-col>
             </el-row>
         </section>
+
+        <br />
+        <h2>文字按钮</h2>
+        <section class="sample">
+            <el-row>
+                <el-col :xs="24" :sm="24" :md="19" :lg="19" :xl="19">
+                    <x-button type="text" >文字按钮</x-button>
+                    <x-button type="text" disabled>文字按钮</x-button>
+                </el-col>
+            </el-row>
+            <el-row>
+                <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+                    <docu-block :height="120">
+                        <md-buttonText></md-buttonText>
+                    </docu-block>
+                </el-col>
+            </el-row>
+        </section>
     </div>
 </template>
 

@@ -16,7 +16,7 @@ export default new Router({
                 },
                 {
                     path: "/Icon",
-                    component:()=>import("../components/common/Button/index.vue")
+                    component:()=>import("../components/common/Icon/index.vue")
                 },
             ]
         },

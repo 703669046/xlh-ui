@@ -1,13 +1,14 @@
 
-
+let packgeName=process.env.NODE_ENV=="doc"?"explain_doc":"dist";
 const path = require("path");
-const Webpack  = require("webpack") 
+const Webpack = require("webpack")
 
 module.exports = {
     pages: {
         index: {
             // 项目入口文件
             entry: "examples/main.js",
+            outputDir: packgeName,
             template: "public/index.html",
             filename: "index.html",
         }
@@ -30,13 +31,13 @@ module.exports = {
     // jquery配置
     configureWebpack: {
         plugins: [
-          new Webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "windows.jQuery": "jquery",
-          }),
+            new Webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery",
+                "windows.jQuery": "jquery",
+            }),
         ],
-      },
+    },
 
     // 扩展webpack配置，让packages加入编译
     chainWebpack: (config) => {
