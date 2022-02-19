@@ -49,7 +49,7 @@
             <el-row>
                 <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
                     <docu-block :height="160">
-                        <md-linkunderline></md-linkunderline>
+                        <md-linkDisabled></md-linkDisabled>
                     </docu-block>
                 </el-col>
             </el-row>
@@ -58,6 +58,12 @@
 </template>
 
 
+import docuBlock from "../../page/docuBlock";
+export default {
+    components: {
+        docuBlock
+    },
+}
 <script>
 import docuBlock from "../../page/docuBlock";
 export default {
@@ -66,8 +72,6 @@ export default {
     }
 };
 </script>
-
-
 <style lang="less" scoped>
 .sample {
     padding: 15px;

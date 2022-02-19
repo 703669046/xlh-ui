@@ -18,7 +18,6 @@ import "./xlh-icon.css"
 
 
 import Button from "./components/Button"
-import Link from "./components/Link"
 
 const install = function (Vue) {
     Vue.mixin({
@@ -50,7 +49,6 @@ const install = function (Vue) {
 
 
     Vue.component("x-button", Button);
-    Vue.component('x-link',Link)
 }
 //判断是否是直接引入文件，不过是，就不要直接调用Vue.use();
 if (typeof window !== "undefined" && window.Vue) {

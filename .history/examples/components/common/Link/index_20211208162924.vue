@@ -31,25 +31,7 @@
             <el-row>
                 <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
                     <docu-block :height="160">
-                        <md-linkDisabled></md-linkDisabled>
-                    </docu-block>
-                </el-col>
-            </el-row>
-        </section> 
-        
-        <hr />
-        <h2>下划线</h2>
-        <section class="sample">
-            <x-link>主要链接</x-link>
-            <x-link type="primary" :underline="false">主要链接</x-link>
-            <x-link type="success" :underline="true">成功链接</x-link>
-            <x-link type="warning" :underline="false">警告链接</x-link>
-            <x-link type="danger" underline>危险链接</x-link>
-            <x-link type="info" :underline="false">信息链接</x-link>
-            <el-row>
-                <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-                    <docu-block :height="160">
-                        <md-linkunderline></md-linkunderline>
+                        <md-link></md-link>
                     </docu-block>
                 </el-col>
             </el-row>
@@ -58,6 +40,12 @@
 </template>
 
 
+import docuBlock from "../../page/docuBlock";
+export default {
+    components: {
+        docuBlock
+    },
+}
 <script>
 import docuBlock from "../../page/docuBlock";
 export default {
@@ -66,8 +54,6 @@ export default {
     }
 };
 </script>
-
-
 <style lang="less" scoped>
 .sample {
     padding: 15px;

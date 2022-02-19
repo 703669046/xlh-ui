@@ -58,6 +58,12 @@
 </template>
 
 
+import docuBlock from "../../page/docuBlock";
+export default {
+    components: {
+        docuBlock
+    },
+}
 <script>
 import docuBlock from "../../page/docuBlock";
 export default {
@@ -66,8 +72,6 @@ export default {
     }
 };
 </script>
-
-
 <style lang="less" scoped>
 .sample {
     padding: 15px;

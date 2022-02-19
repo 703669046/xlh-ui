@@ -22,10 +22,6 @@ export default new Router({
                     path: "/Link",
                     component:()=>import("../components/common/Link/index.vue")
                 },
-                {
-                    path: "/Radio",
-                    component:()=>import("../components/common/Radio/index.vue")
-                },
             ]
         },
         

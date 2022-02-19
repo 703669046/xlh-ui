@@ -7,7 +7,6 @@ import buttonText from "./button/button-text.md"
 
 import link from "./link/link.md"
 import linkDisabled from './link/link-disabled.md'
-import linkunderline from './link/link-underline.md'
 
 
 
@@ -19,8 +18,6 @@ const Components = {
     buttonDisabled,
     buttonText,
     link,
-    linkDisabled,
-    linkunderline
 }
 Object.keys(Components).forEach((key) => {
     Vue.component(`md-${key}`, Components[key])

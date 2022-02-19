@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h2>Radio 单选框</h2>
+        <h2>Button 按钮</h2>
         <hr />
-        <h2>默认单选框</h2>
+        <h2>默认按钮</h2>
         <section class="sample">
             <el-row>
                 <el-col :xs="24" :sm="24" :md="19" :lg="19" :xl="19">

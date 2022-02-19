@@ -18,14 +18,6 @@ export default new Router({
                     path: "/Icon",
                     component:()=>import("../components/common/Icon/index.vue")
                 },
-                {
-                    path: "/Link",
-                    component:()=>import("../components/common/Link/index.vue")
-                },
-                {
-                    path: "/Radio",
-                    component:()=>import("../components/common/Radio/index.vue")
-                },
             ]
         },
         
